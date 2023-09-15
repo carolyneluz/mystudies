@@ -3,3 +3,4 @@ B = int(input())
 X = A + B 
 
 print("X =", X)
+print("\n")
