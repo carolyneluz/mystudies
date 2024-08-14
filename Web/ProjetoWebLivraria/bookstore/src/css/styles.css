@@ -1,0 +1,243 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url('https://shorturl.at/5Zjr1'); 
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o corpo todo */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+.header {
+    background-color: #002147; /* Azul marinho */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative; /* Necessário para garantir que o background da header seja sobreposto */
+    z-index: 1; /* Garante que o conteúdo da header fique acima da imagem de fundo */
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-family: 'Garamond', serif;
+    color: #f0ead6; /* Amarelo suave */
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.header .title-text {
+    font-family: 'Garamond', serif;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-icons .genres-dropdown,
+.header-icons .user-dropdown {
+    position: relative;
+    margin-right: 10px;
+}
+
+.header-icons .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cce2f3; /* Azul claro */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 30px;
+    top: 30px;
+}
+
+.header-icons .genres-dropdown:hover .dropdown-content,
+.header-icons .user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-icons .genres-dropdown span,
+.header-icons .user-dropdown span {
+    color: #f0ead6; /* Amarelo suave */
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.header-icons .dropdown-content a,
+.header-icons .user-dropdown .dropdown-content a {
+    color: #002147; /* Azul marinho */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header-icons .dropdown-content a:hover,
+.header-icons .user-dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.header-icons .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #f0ead6; /* Amarelo suave */
+    cursor: pointer;
+}
+
+.inventory-dropdown {
+    position: relative;
+    margin-right: 10px;
+}
+
+.inventory-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.inventory-dropdown span {
+    color: #f0ead6; /* Amarelo suave */
+    padding: 12px 16px;
+    cursor: pointer;
+    display: block;
+}
+
+.inventory-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cce2f3; /* Azul claro */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    top: 100%;
+}
+
+.inventory-dropdown .dropdown-content a {
+    color: #002147; /* Azul marinho */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.inventory-dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#bookList {
+    padding-left: 10px;
+}
+
+/* Estilos para cada item de livro */
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-item:hover {
+    background-color: #f1f1f1;
+}
+
+.book-item button {
+    background-color: #002147;
+    color: #f0ead6;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book-item button:hover {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.inventory-dropdown:hover .dropdown-content,
+.genres-dropdown:hover .dropdown-content,
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book-item span {
+    flex: 1;
+}
+
+.book-item input[type="number"] {
+    margin-right: 10px;
+    width: 60px;
+}
+
+.book-item button {
+    margin-left: 5px;
+}
+
+/* Estilos para o formulário de adicionar livro */
+.form-container {
+    width: 35%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+    background-color: #002147;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #28a745; /* Verde */
+}

@@ -1,0 +1,128 @@
+/* styles/style.css */
+body {
+    background-color: #141414; /* Fundo escuro */
+    color: #FFFFFF; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #141414;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Tamanho do logotipo */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Texto branco */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.centered-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar ao topo */
+    margin-top: 20px;
+}
+
+.centered-logo img {
+    width: 30%; /* 30% do tamanho original */
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-top: 10px; /* Ajuste a margem para aproximar do logo */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content .cta-button {
+    background-color: #E50914; /* Vermelho Netflix */
+    color: #FFFFFF; /* Texto branco */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-content .cta-button:hover {
+    background-color: #f40612; /* Vermelho mais claro */
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #E50914; /* Vermelho Netflix */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f40612; /* Vermelho mais claro */
+}
