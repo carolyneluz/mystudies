@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #planet-list {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .planet-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .planet-btn:hover {
+    background-color: #45a049;
+  }
+  
+  #planet-details {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
